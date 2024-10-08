@@ -9,11 +9,24 @@
 <body>
     <header class="header">
         <h1>Employee Database Management</h1>
-        <button id="add_employee">Add Employee</button>
+        <button id="addEmployeeBtn">Add Employee</button>
     </header>
     <main>
         <section class="employee_list" id="employeeList"></section>
     </main>
+    <div id="employeeModel" class ="model">
+        <div class ="modelContent">
+            <button class="close-btn" id="closeModalBtn">X</button>
+            <h2>Add a new Employee</h2>
+            <form id="employeeForm">
+                <input type="text" id="firstName" placeholder="First Name"/>
+                <input type="text" id="lastName" placeholder="Last Name"/>
+                <button id ="submitButon" class="submitButon"> Submit</button>
+            </form>
+
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
